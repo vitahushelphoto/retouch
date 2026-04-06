@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA — Ретуш & Обробка фото</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">AURA</a>
+    <ul class="nav__links">
+      <li><a href="#about">Про мене</a></li>
+      <li><a href="#portfolio">Роботи</a></li>
+      <li><a href="#price">Ціни</a></li>
+      <li><a href="#contacts">Контакти</a></li>
+    </ul>
+    <a href="#contacts" class="btn btn--outline nav__cta">Замовити</a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Про мене</a></li>
+      <li><a href="#portfolio" class="mobile-link">Роботи</a></li>
+      <li><a href="#price" class="mobile-link">Ціни</a></li>
+      <li><a href="#contacts" class="mobile-link">Контакти</a></li>
+    </ul>
+    <a href="#contacts" class="btn btn--primary mobile-link">Замовити ретуш</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg-text" aria-hidden="true">RETOUCH</div>
+    <div class="hero__content">
+      <div class="hero__tag">
+        <span class="dot"></span>
+        Відкрита для замовлень
+      </div>
+      <h1 class="hero__title">
+        Кожне фото —<br />
+        <em>твій</em> шедевр
+      </h1>
+      <p class="hero__sub">Професійна ретуш портретів, beauty та комерційних знімків. Від природної обробки до складних композитів.</p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--primary">Переглянути роботи</a>
+        <a href="#price" class="btn btn--ghost">Дізнатись ціни ↓</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">500+</span>
+          <span class="stat__label">Виконаних проєктів</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">4 роки</span>
+          <span class="stat__label">Досвіду в ретуші</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">98%</span>
+          <span class="stat__label">Задоволених клієнтів</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__frame">
+        <div class="hero__image-placeholder">
+          <div class="placeholder__inner">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="80" r="45" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <circle cx="100" cy="80" r="30" fill="currentColor" opacity="0.15"/>
+              <path d="M55 155 C55 130 145 130 145 155" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <p>Ваше фото</p>
+          </div>
+        </div>
+        <div class="hero__badge hero__badge--before">Before</div>
+        <div class="hero__badge hero__badge--after">After ✦</div>
+        <div class="hero__glow"></div>
+      </div>
+      <div class="hero__floating-tag">
+        <span>✦</span> Lightroom · Photoshop · Capture One
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Скрольте</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__photo-wrap">
+          <div class="about__photo-frame">
+            <div class="about__photo-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="45" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+                <circle cx="100" cy="80" r="28" fill="currentColor" opacity="0.2"/>
+                <path d="M50 165 C50 135 150 135 150 165" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="about__accent-block">
+              <span class="mono">PS</span>
+              <p>Certified Adobe Specialist</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <div class="section-tag">Про мене</div>
+          <h2 class="section-title">Привіт, я <span class="highlight">Аліна</span> —<br />ретушер з пристрастю</h2>
+          <p>Займаюся ретушшю вже 4 роки. Моя мета — не змінити вас, а підкреслити вашу природну красу та передати емоцію знімка так, як задумав фотограф.</p>
+          <p>Спеціалізуюсь на портретній та beauty ретуші, ecommerce обробці та творчих композитах. Кожен проєкт отримує індивідуальний підхід.</p>
+          <div class="about__tools">
+            <span class="tool-tag">Adobe Photoshop</span>
+            <span class="tool-tag">Lightroom Classic</span>
+            <span class="tool-tag">Capture One</span>
+            <span class="tool-tag">Frequency Separation</span>
+            <span class="tool-tag">Dodge & Burn</span>
+          </div>
+          <a href="#contacts" class="btn btn--primary">Написати мені</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Портфоліо</div>
+        <h2 class="section-title">Вибрані <span class="highlight">роботи</span></h2>
+        <p class="section-sub">Наведіть на фото, щоб побачити різницю</p>
+      </div>
+      <div class="portfolio__filters">
+        <button class="filter-btn active" data-filter="all">Всі</button>
+        <button class="filter-btn" data-filter="portrait">Портрет</button>
+        <button class="filter-btn" data-filter="beauty">Beauty</button>
+        <button class="filter-btn" data-filter="commercial">Комерційні</button>
+      </div>
+      <div class="portfolio__grid">
+        <!-- Cards -->
+        <div class="port-card" data-category="portrait">
+          <div class="port-card__img port-card__img--1">
+            <div class="port-card__overlay">
+              <span class="port-card__label">Портретна ретуш</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-card port-card--wide" data-category="beauty">
+          <div class="port-card__img port-card__img--2">
+            <div class="port-card__overlay">
+              <span class="port-card__label">Beauty Editorial</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-card" data-category="commercial">
+          <div class="port-card__img port-card__img--3">
+            <div class="port-card__overlay">
+              <span class="port-card__label">Комерційна зйомка</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-card" data-category="beauty">
+          <div class="port-card__img port-card__img--4">
+            <div class="port-card__overlay">
+              <span class="port-card__label">Makeup Artist</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-card port-card--tall" data-category="portrait">
+          <div class="port-card__img port-card__img--5">
+            <div class="port-card__overlay">
+              <span class="port-card__label">Fashion Portrait</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-card" data-category="commercial">
+          <div class="port-card__img port-card__img--6">
+            <div class="port-card__overlay">
+              <span class="port-card__label">E-commerce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Як це працює</div>
+        <h2 class="section-title">Просто <span class="highlight">4 кроки</span></h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="step__num">01</div>
+          <div class="step__body">
+            <h3>Замовлення</h3>
+            <p>Пишете мені в Telegram або Instagram. Обговорюємо стиль та побажання.</p>
+          </div>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step">
+          <div class="step__num">02</div>
+          <div class="step__body">
+            <h3>Оплата</h3>
+            <p>Погоджуємо вартість та терміни. Передоплата 50% для старту роботи.</p>
+          </div>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step">
+          <div class="step__num">03</div>
+          <div class="step__body">
+            <h3>Ретуш</h3>
+            <p>Обробляю ваші фото з увагою до деталей. Надсилаю чернетку для схвалення.</p>
+          </div>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step">
+          <div class="step__num">04</div>
+          <div class="step__body">
+            <h3>Результат</h3>
+            <p>Після коригувань — фінальні файли у потрібному форматі та розмірі.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="price section" id="price">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Ціни</div>
+        <h2 class="section-title">Прозорі <span class="highlight">тарифи</span></h2>
+        <p class="section-sub">Індивідуальні знімки або пакети — обирайте що підходить</p>
+      </div>
+      <div class="price__grid">
+        <div class="price-card">
+          <div class="price-card__tag">Старт</div>
+          <div class="price-card__name">Базова</div>
+          <div class="price-card__price">від <strong>150 ₴</strong><span>/фото</span></div>
+          <ul class="price-card__features">
+            <li>✓ Корекція кольору</li>
+            <li>✓ Видалення дефектів шкіри</li>
+            <li>✓ Базова корекція форми</li>
+            <li>✓ 1 правка включена</li>
+            <li class="muted">✗ Складні маніпуляції</li>
+            <li class="muted">✗ Фоновий монтаж</li>
+          </ul>
+          <a href="#contacts" class="btn btn--outline">Замовити</a>
+        </div>
+        <div class="price-card price-card--featured">
+          <div class="price-card__badge">✦ Популярне</div>
+          <div class="price-card__tag">Хіт</div>
+          <div class="price-card__name">Стандарт</div>
+          <div class="price-card__price">від <strong>280 ₴</strong><span>/фото</span></div>
+          <ul class="price-card__features">
+            <li>✓ Все з базової</li>
+            <li>✓ Frequency Separation</li>
+            <li>✓ Dodge & Burn</li>
+            <li>✓ Робота зі світлом</li>
+            <li>✓ 2 правки включені</li>
+            <li class="muted">✗ Фоновий монтаж</li>
+          </ul>
+          <a href="#contacts" class="btn btn--primary">Замовити</a>
+        </div>
+        <div class="price-card">
+          <div class="price-card__tag">Максимум</div>
+          <div class="price-card__name">Преміум</div>
+          <div class="price-card__price">від <strong>500 ₴</strong><span>/фото</span></div>
+          <ul class="price-card__features">
+            <li>✓ Все зі стандарту</li>
+            <li>✓ Складний монтаж фону</li>
+            <li>✓ Композитна робота</li>
+            <li>✓ Творчі маніпуляції</li>
+            <li>✓ 3 правки включені</li>
+            <li>✓ Пріоритетне виконання</li>
+          </ul>
+          <a href="#contacts" class="btn btn--outline">Замовити</a>
+        </div>
+      </div>
+      <p class="price__note">* Для пакетів від 10 фото — знижка 15%. Терміни: 1-5 робочих днів залежно від складності.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="reviews section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Відгуки</div>
+        <h2 class="section-title">Що кажуть <span class="highlight">клієнти</span></h2>
+      </div>
+      <div class="reviews__grid">
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Аліна — просто чарівниця! Фото після ретуші виглядають природно та живо. Обов'язково повернусь знову."</p>
+          <div class="review-card__author">
+            <div class="author-avatar">О</div>
+            <div>
+              <strong>Оксана К.</strong>
+              <span>Фотограф</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card review-card--accent">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Замовляла beauty ретуш для портфоліо. Результат перевершив очікування — чисто, стильно, без перебору."</p>
+          <div class="review-card__author">
+            <div class="author-avatar">М</div>
+            <div>
+              <strong>Маша В.</strong>
+              <span>Модель</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Дуже швидко та якісно. Замовляв комерційні знімки для сайту — все на вищому рівні. Рекомендую!"</p>
+          <div class="review-card__author">
+            <div class="author-avatar">Д</div>
+            <div>
+              <strong>Денис Л.</strong>
+              <span>Підприємець</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts section" id="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__left">
+          <div class="section-tag">Контакти</div>
+          <h2 class="section-title">Готові до <span class="highlight">співпраці?</span></h2>
+          <p>Напишіть мені — і ми обговоримо ваш проєкт. Відповідаю протягом кількох годин.</p>
+          <div class="contacts__links">
+            <a href="https://t.me/yourusername" class="contact-link" target="_blank">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+              </div>
+              <div>
+                <span class="contact-link__label">Telegram</span>
+                <span class="contact-link__val">@yourusername</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/yourusername" class="contact-link" target="_blank">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div>
+                <span class="contact-link__label">Instagram</span>
+                <span class="contact-link__val">@yourusername</span>
+              </div>
+            </a>
+            <a href="mailto:hello@youremail.com" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__val">hello@youremail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contacts__form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Ваше ім'я</label>
+              <input type="text" id="name" name="name" placeholder="Аліна" required />
+            </div>
+            <div class="form-group">
+              <label for="contact">Telegram / Email</label>
+              <input type="text" id="contact" name="contact" placeholder="@username або email" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Тип ретуші</label>
+              <select id="service" name="service">
+                <option value="">Оберіть тип...</option>
+                <option>Портретна</option>
+                <option>Beauty</option>
+                <option>Комерційна</option>
+                <option>Інше</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Опис проєкту</label>
+              <textarea id="message" name="message" placeholder="Розкажіть про ваші фото та побажання..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Відправити заявку ✦</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">AURA</div>
+        <p class="footer__copy">© 2025 AURA Retouch. Зроблено з ❤ та Photoshop</p>
+        <div class="footer__links">
+          <a href="https://t.me/yourusername" target="_blank">TG</a>
+          <a href="https://instagram.com/yourusername" target="_blank">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
